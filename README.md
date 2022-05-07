@@ -1,3 +1,7 @@
+# Lukupay network service
+
+Lukupay is intended to be a clone of the MTN. It is still in the making. We currently run https://lukupay.com.ng
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
