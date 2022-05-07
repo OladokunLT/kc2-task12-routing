@@ -3,17 +3,17 @@ export const Menulist = [
     {
         'id': 1,
         'value': '100',
-        size: '10MB',
+        'size': '10MB',
         'validity': '1 day'
     },
     {
         'id': 2,
         'value': '200',
-        size: '500MB',
+        'size': '500MB',
         'validity': '1 day'
     },
     {
-        id: 3,
+        'id': 3,
         'value': '500',
         'size': '750MB',
         'validity': '1 week'
