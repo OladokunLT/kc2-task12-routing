@@ -1,5 +1,5 @@
 
-export const Menulist = [
+let dataplans = [
     {
         'id': 1,
         'value': '100',
@@ -44,4 +44,6 @@ export const Menulist = [
 
  ]
 
-export default Menulist
+export function getDataplans() {
+    return dataplans;
+}
