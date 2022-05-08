@@ -16,7 +16,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path='/kc2-task12-routing' element={<App />} >
-        <Route path='/Home' element={< Home/>} >
+        <Route path='kc2-task12-routing/Home' element={< Home/>} >
           <Route
             index
               element={
@@ -27,8 +27,8 @@ root.render(
           />
           <Route path=":dataplanId" element={<Dataplan />} />
         </Route>
-        <Route path='/About' element={<About />} />
-        <Route path='/Contact' element={<Contact />} />
+        <Route path='kc2-task12-routing/About' element={<About />} />
+        <Route path='kc2-task12-routing/Contact' element={<Contact />} />
         <Route 
           path='*'
           element={

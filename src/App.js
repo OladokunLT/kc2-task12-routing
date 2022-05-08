@@ -10,9 +10,9 @@ function App() {
 
    
       <nav>
-        <Link to="/home" >Home</Link> | {" "}
-        <Link to="/contact">Contact</Link> | {" "}
-        <Link to="/about"> About</Link>
+        <Link to="kc2-task12-routing/home" >Home</Link> | {" "}
+        <Link to="kc2-task12-routing/contact">Contact</Link> | {" "}
+        <Link to="kc2-task12-routing/about"> About</Link>
       </nav>
       <Outlet />
     </div>
