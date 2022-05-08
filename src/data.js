@@ -30,7 +30,7 @@ let dataplans = [
         'size': '5GB',
         'validity': '1 month'
     },
-    {'  id': 6,
+    {   'id': 6,
         'value': '5,000',
         'size': '10GB',
         'validity': '1 month'
@@ -42,7 +42,7 @@ let dataplans = [
         'validity': '1 month'
     }
 
- ]
+ ];
 
 export function getDataplans() {
     return dataplans;

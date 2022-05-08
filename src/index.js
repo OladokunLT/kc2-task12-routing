@@ -6,14 +6,27 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './routes/About';
 import Contact from './routes/Contact';
+import Home from './routes/Home';
+import Dataplan from './routes/Dataplan';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />} >
+        <Route path='Home' element={< Home/>} >
+          <Route path=":dataplanId" element={<Dataplan />} />
+        </Route>
         <Route path='About' element={<About />} />
         <Route path='Contact' element={<Contact />} />
+        <Route 
+          path='*'
+          element={
+            <main style={{ padding: "1rem"}}>
+              <h3> Page not found!</h3>
+            </main>
+          }
+        />
       </Route>
     </Routes> 
   </BrowserRouter>
