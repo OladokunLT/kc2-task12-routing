@@ -12,7 +12,7 @@ export default function Home() {
       >
         {dataplans.map((dataplan) => (
           <Link
-            to={`/dataplan/${dataplan.id}`}
+            to={`/kc2-task12-routing/dataplan/${dataplan.id}`}
             key={dataplan.id}
           >
             <div className="d-flex">
