@@ -8,6 +8,8 @@ import About from './routes/About';
 import Contact from './routes/Contact';
 import Home from './routes/Home';
 import Dataplan from './routes/Dataplan';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +17,14 @@ root.render(
     <Routes>
       <Route path='/' element={<App />} >
         <Route path='Home' element={< Home/>} >
+          <Route
+            index
+              element={
+                <main >
+                  
+                </main>
+              }
+          />
           <Route path=":dataplanId" element={<Dataplan />} />
         </Route>
         <Route path='About' element={<About />} />
@@ -22,7 +32,7 @@ root.render(
         <Route 
           path='*'
           element={
-            <main style={{ padding: "1rem"}}>
+            <main>
               <h3> Page not found!</h3>
             </main>
           }

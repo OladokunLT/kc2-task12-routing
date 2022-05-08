@@ -1,27 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { getDataplans } from "../data";
+import "../home.css";
 
 export default function Home() {
   let dataplans = getDataplans();
   return (
-    <div style={{ display: "flex" }}>
+    <div >
       <nav
-        style={{
-          borderRight: "solid 1px",
-          padding: "1rem",
-        }}
+        className="plans"
       >
         {dataplans.map((dataplan) => (
           <Link
-            style={{ display: "block", margin: "1rem 0" }}
             to={`/dataplan/${dataplan.id}`}
             key={dataplan.id}
           >
-            {dataplan.size}
+            <div className="d-flex">
+              <div className="card">
+                <div className="size">{dataplan.size}</div>
+                <div className="size">NGN {dataplan.value}</div>
+                <div className="size">{dataplan.validity}</div>
+              </div>
+            </div>
           </Link>
         ))}
       </nav>
+      <Outlet />
     </div>
   );
 }

@@ -7,6 +7,8 @@ function App() {
     <>
     <div className="App">
       <h1>Lukupay Network Service</h1>
+
+   
       <nav>
         <Link to="/home" >Home</Link> | {" "}
         <Link to="/contact">Contact</Link> | {" "}
