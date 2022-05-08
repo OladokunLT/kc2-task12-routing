@@ -16,33 +16,11 @@ export class Contact extends Component {
     return (
       <>
         <h3> {this.state.pageName} </h3>
-        <p>Email: {this.state.email} </p>
-        <p>Address: {this.state.location} </p>
+        <p><b>Email</b>: {this.state.email} </p>
+        <p><b>Address</b>: {this.state.location} </p>
       </>
     )
   }
 }
 
 export default Contact
-
-
-
-
-
-
-
-// import React from 'react'
-
-// function Contact() {
-//   return (
-//     <main>
-//         <>
-//           <h3>Contact</h3>
-//           <p>Email: lukmanoladokun86@gmail.com</p>
-//           <p>website: https://lukupay.com.ng</p>
-//         </>
-//     </main>
-//   )
-// }
-
-// export default Contact
