@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={<App />} >
+      <Route path='/kc2-task12-routing' element={<App />} >
         <Route path='/Home' element={< Home/>} >
           <Route
             index
